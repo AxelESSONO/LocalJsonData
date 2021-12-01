@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="20dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/imageTvShow"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/flash"
+            android:scaleType="centerCrop"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="2dp"
+            android:paddingStart="10dp"
+            android:orientation="vertical"
+            android:background="@color/colorPrimaryLight"
+            android:layout_toEndOf="@id/imageTvShow">
+
+            <TextView
+                android:id="@+id/tvShowName"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:gravity="center_vertical"
+                android:text="The Flash"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:fontFamily="@font/ubuntu_bold"/>
+
+            <TextView
+                android:id="@+id/networkAndCountry"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:gravity="center_vertical"
+                android:text="The CW (US)"
+                android:textStyle="normal"
+                android:textColor="@color/colorTextOther"
+                android:textSize="15sp"
+                android:fontFamily="@font/ubuntu_regular"/>
+
+            <TextView
+                android:id="@+id/startDate"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:gravity="center_vertical"
+                android:text="Started on 2011-05-18"
+                android:textStyle="normal"
+                android:textColor="@color/colorTextSecondary"
+                android:textSize="15sp"
+                android:fontFamily="@font/ubuntu_regular"/>
+
+            <TextView
+                android:id="@+id/textStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:gravity="center_vertical"
+                android:text="Ended"
+                android:textStyle="normal"
+                android:textColor="@android:color/holo_green_light"
+                android:textSize="15sp"
+                android:fontFamily="@font/ubuntu_regular"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
